@@ -382,27 +382,25 @@ padding-bottom: 32px;
 }
  .team-sochmed .item {
     display: flex;
-    border-radius: 50%;
    
 }
 .team-sochmed .icones {
-    display: flex;
-        align-self: center;
-        width: 40px;
-        height: 40px;
-        fill: var(--icone-color);
-        border-radius: 50%;
+        width: 20px;
+        height: 20px;
 }
 .team-links {
     display: flex;
-    width: 20px;
-    height: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
+    color: var(--icone-color);
    fill: currentColor;
 
 }
-.team-sochmed .icones:hover {
-   fill: var(--hero-tittle-color);
+.team-links:hover {
+   color: var(--hero-tittle-color);
    background-color: var(--accsent-color);
 }
 
@@ -455,12 +453,15 @@ padding-bottom: 32px;
     
 }
 .clients-links {
+
     display: flex;
     width: 170px;
     height: 92px;
     color: var(--icone-color);
+    fill: currentColor;
     padding: 16px 32px;
 }
+
 .clients .item:not(:nth-last-child()) {
     margin-right: 30px;
 }
@@ -468,8 +469,7 @@ padding-bottom: 32px;
     display: flex;
     align-self: center;
     width: 106px;
-    height: 60px;
-    fill: currentColor;  
+    height: 60px; 
 }
 
 .clients-links:hover,
@@ -634,6 +634,20 @@ display: inline-block;
 .footer-contacts:focus {
     color: var(--accsent-color);
 }
+.footer-title {
+    color: var(--primary-background-color);
+    
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+    
+    
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+
 .sochmed-footer {
     display: flex;
 }
