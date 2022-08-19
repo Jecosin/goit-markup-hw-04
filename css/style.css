@@ -475,6 +475,7 @@ padding-bottom: 32px;
 .clients-links:hover,
 .clients .icones:focus {
     fill: var(--accsent-color);
+    border-color: var(--accsent-color);
 }
 
 /* PORTFOLIO SECTION */
@@ -583,6 +584,10 @@ display: inline-block;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-conteiner {
+    display: flex;
+}
+
 
 .logo-footer {
     display: inline-block;
@@ -666,7 +671,6 @@ display: inline-block;
 .footer-sochmed .icones {
     width: 20px;
     height: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .foot-links {
@@ -678,6 +682,7 @@ display: inline-block;
         border-radius: 50%;
         color: var(--hero-tittle-color);
         fill: currentColor;
+        background-color: rgba(255, 255, 255, 0.1);
 }
 
 .foot-links:hover {
