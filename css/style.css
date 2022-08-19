@@ -21,6 +21,8 @@
     --hero-tittle-color: #ffffff;
     --head-line-color: #ECECEC;
     --border-color:#EEEEEE;
+    --icone-bg-color:#F5F4FA; 
+    --icone-color:#AFB1B8;
 
 }
 
@@ -132,12 +134,13 @@ margin-left: auto;
 padding-top: 32px;
 padding-bottom: 32px; 
 }
+.nav-contacts {
+    display: flex;
+    align-items: center;
+}
 
 .nav-icones {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
-    fill: var(--secondory-text-color);
 }
 .nav-icones:hover {
     fill: var(--accsent-color);
@@ -170,6 +173,7 @@ padding-bottom: 32px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    fill: currentColor;
 }
 
 /* Hero */
@@ -245,7 +249,6 @@ padding-bottom: 32px;
 .head-sectione {
     background-color: var(--primary-background-color);
     border-bottom: 1px solid;
-    color: var(--head-line-color)
 }
 .section-title {
 
@@ -281,7 +284,7 @@ padding-bottom: 32px;
 .first-icones {
     padding: 25px 100px;
     margin-bottom: 30pp;
-    background-color: #F5F4FA;
+    background-color: var(--icone-bg-color);
 }
 /* .first-section .items::before {
     display: block;
@@ -322,7 +325,7 @@ padding-bottom: 32px;
     display: inline-block;
     width: 65.32px;
     height: 70px;
-    background-color: #F5F4FA;
+    background-color: var(--icone-bg-color);
 }
 
 
@@ -379,18 +382,28 @@ padding-bottom: 32px;
 }
  .team-sochmed .item {
     display: flex;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
-   fill: #AFB1B8;
+   
+}
+.team-sochmed .icones {
+    display: flex;
+        align-self: center;
+        width: 40px;
+        height: 40px;
+        fill: var(--icone-color);
+        border-radius: 50%;
 }
 .team-links {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 1px solid #AFB1B8;
+   fill: currentColor;
 
+}
+.team-sochmed .icones:hover {
+   fill: var(--hero-tittle-color);
+   background-color: var(--accsent-color);
 }
 
 .featurelist-title {
@@ -437,7 +450,7 @@ padding-bottom: 32px;
 }
 .clients .item {
     display: flex;
-    border:1px solid #AFB1B8;
+    border:1px solid var(--icone-color);
     border-radius: 5%;
     
 }
@@ -445,7 +458,7 @@ padding-bottom: 32px;
     display: flex;
     width: 170px;
     height: 92px;
-    color: #AFB1B8;
+    color: var(--icone-color);
     padding: 16px 32px;
 }
 .clients .item:not(:nth-last-child()) {
@@ -456,9 +469,10 @@ padding-bottom: 32px;
     align-self: center;
     width: 106px;
     height: 60px;
-    fill: #AFB1B8;   
+    fill: currentColor;  
 }
-.clients .icones:hover,
+
+.clients-links:hover,
 .clients .icones:focus {
     fill: var(--accsent-color);
 }
@@ -619,4 +633,39 @@ display: inline-block;
 .footer-contacts:hover,
 .footer-contacts:focus {
     color: var(--accsent-color);
+}
+.sochmed-footer {
+    display: flex;
+}
+.footer-sochmed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-sochmed .item {
+    display: flex;
+    border-radius: 50%;
+
+}
+
+.footer-sochmed .icones {
+    display: flex;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    fill: var(--hero-tittle-color);
+    border-radius: 50%;
+}
+.foot-links {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    fill: currentColor;
+
+}
+
+.footer-sochmed .icones:hover {
+    fill: var(--hero-tittle-color);
+    background-color: var(--accsent-color);
 }
