@@ -650,6 +650,8 @@ display: inline-block;
 
 .sochmed-footer {
     display: flex;
+        flex-wrap: wrap;
+        
 }
 .footer-sochmed {
     display: flex;
@@ -658,28 +660,27 @@ display: inline-block;
 
 .footer-sochmed .item {
     display: flex;
-    border-radius: 50%;
 
 }
 
 .footer-sochmed .icones {
-    display: flex;
-    align-self: center;
     width: 20px;
     height: 20px;
-    fill: var(--hero-tittle-color);
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
 .foot-links {
     display: flex;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    fill: currentColor;
-
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: var(--hero-tittle-color);
+        fill: currentColor;
 }
 
-.footer-sochmed .icones:hover {
-    fill: var(--hero-tittle-color);
-    background-color: var(--accsent-color);
+.foot-links:hover {
+    color: var(--hero-tittle-color);
+     background-color: var(--accsent-color);
 }
