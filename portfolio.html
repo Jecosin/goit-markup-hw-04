@@ -1,4 +1,4 @@
-20<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -23,34 +23,40 @@
   <body>
     <!-- Header -->
     <header class="head-sectione">
-      <section>
-        <div class="conteiner main-nav">
-          <a href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span>Studio</a
-          >
-          <nav>
-            <ul class="site-nav list">
-              <li class="items">
-                <a href="./index.html" class="link">Студія</a>
-              </li>
-              <li class="items">
-                <a href="./portfolio.html" class="link current">Портфоліо</a>
-              </li>
-              <li class="items"><a href="#" class="link">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="auth-nav list">
+      <div class="conteiner main-nav">
+        <a href="./index.html" class="logo"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="site-nav list">
             <li class="items">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a href="./index.html" class="link">Студія</a>
             </li>
             <li class="items">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
             </li>
+            <li class="items"><a href="#" class="link">Контакти</a></li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="items">
+            <a class="link nav-contacts" href="mailto:info@devstudio.com"
+              ><svg class="nav-icones" width="16" height="12">
+                <use href="./imeges/svg/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="items">
+            <a class="link nav-contacts" href="tel:+380961111111"
+              ><svg class="nav-icones" width="10" height="16">
+                <use href="./imeges/svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Main Content -->
     <main>
@@ -215,8 +221,8 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <section>
-        <div class="conteiner">
+      <div class="conteiner footer-conteiner">
+        <div class="class-conteiner">
           <a href="./index.html" class="logo-footer"
             ><span class="logo-accent">Web</span>Studio</a
           >
@@ -244,7 +250,40 @@
             </ul>
           </address>
         </div>
-      </section>
+        <div class="sochmed-conteiner">
+          <h2 class="footer-title">ПРИЄДНУЙТЕСЬ</h2>
+          <ul class="list footer-sochmed">
+            <li class="item">
+              <a href="" class="foot-links">
+                <svg class="icones">
+                  <use href="./imeges/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="foot-links">
+                <svg class="icones">
+                  <use href="./imeges/svg/symbol-defs.svg#icon-tviter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="foot-links">
+                <svg class="icones">
+                  <use href="./imeges/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="foot-links"
+                ><svg class="icones">
+                  <use href="./imeges/svg/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

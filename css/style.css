@@ -448,9 +448,6 @@ padding-bottom: 32px;
 }
 .clients .item {
     display: flex;
-    border:1px solid var(--icone-color);
-    border-radius: 5%;
-    
 }
 .clients-links {
 
@@ -460,6 +457,8 @@ padding-bottom: 32px;
     color: var(--icone-color);
     fill: currentColor;
     padding: 16px 32px;
+    border: 1px solid var(--icone-color);
+        border-radius: 5%;
 }
 
 .clients .item:not(:nth-last-child()) {
@@ -587,7 +586,9 @@ display: inline-block;
 .footer-conteiner {
     display: flex;
 }
-
+.sochmed-conteiner {
+    margin-left: 70px;
+}
 
 .logo-footer {
     display: inline-block;
@@ -643,7 +644,7 @@ display: inline-block;
     color: var(--primary-background-color);
     
         margin-top: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
@@ -677,6 +678,7 @@ display: inline-block;
     display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 10px;
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -684,6 +686,10 @@ display: inline-block;
         fill: currentColor;
         background-color: rgba(255, 255, 255, 0.1);
 }
+/* .foot-links:last-child{
+    margin-right: 0px; 
+} */
+
 
 .foot-links:hover {
     color: var(--hero-tittle-color);
