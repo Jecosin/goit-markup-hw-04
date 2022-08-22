@@ -50,7 +50,7 @@ body {
 }
 .conteiner-port-text {
    display:block;
-   padding: 24px 20px;
+   padding: 20px 24px;
    margin-top: 0;
    margin-bottom: 0;
 
@@ -70,7 +70,7 @@ body {
     
         outline: 2px solid tomato;
 }
-img {
+.img {
     display: block;
     max-width: 100%;
 }
@@ -184,15 +184,12 @@ padding-bottom: 32px;
     background-color: var(--footer-bacground-color);
 
     text-align: center;
-
- background-image: linear-gradient(
-    to right, 
-    rgba(47, 48, 58, 0.4)
-    );
     background-image: url(../imeges/bg-Img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -282,35 +279,15 @@ padding-bottom: 32px;
         margin-left: 30px;
 }
 .first-icones {
-    padding: 25px 100px;
-    margin-bottom: 30pp;
-    background-color: var(--icone-bg-color);
-}
-/* .first-section .items::before {
-    display: block;
-    content: "";
     height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-
-} */
-
-/* .icon-satellite::before {
-        background-image: url();
+    margin-bottom: 30px;
+    background-color: var(--icone-bg-color);
+        display: flex;
+            justify-content: center;
+            align-items: center;
 }
-.icon-clock::before {
-        background-image: url();
-}
-.icon-laptop::before {
-        background-image: url();
-}
-.icon-astronaut::before {
-        background-image: url(); 
-} */
-
 .discript-tittle {
+
     color: var(--primary-text-color);
 
     margin-bottom: 10px;
@@ -322,9 +299,6 @@ padding-bottom: 32px;
     line-height: 1.14;
 }
 .discript-icone {
-    display: inline-block;
-    width: 65.32px;
-    height: 70px;
     background-color: var(--icone-bg-color);
 }
 
@@ -373,6 +347,9 @@ padding-bottom: 32px;
    .team-curds {
     background-color: var(--primary-background-color);
     width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+        
 }
 .team-sochmed {
     display: flex;
@@ -445,6 +422,7 @@ padding-bottom: 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 0 0 -30px;
 }
 .clients .item {
     display: flex;
@@ -452,13 +430,17 @@ padding-bottom: 32px;
 .clients-links {
 
     display: flex;
-    width: 170px;
+        justify-content: center;
+        align-items: center;
     height: 92px;
     color: var(--icone-color);
     fill: currentColor;
-    padding: 16px 32px;
     border: 1px solid var(--icone-color);
         border-radius: 5%;
+
+        flex-basis: calc(100% / 6 - 30px);
+        margin-left: 30px;
+        
 }
 
 .clients .item:not(:nth-last-child()) {
@@ -538,6 +520,11 @@ display: inline-block;
     text-decoration: none;
 
 }
+.portcurt-decoration {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .main-port .port-bt {
     display: flex;
@@ -572,7 +559,9 @@ display: inline-block;
     flex-basis: calc(100% / 3 - 30px); 
     margin-left: 30px;
     margin-top: 30px;
-
+/* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 
@@ -630,10 +619,9 @@ display: inline-block;
     text-decoration: none;
 }
 
-.footer .footer-contacts,
-.adress {
-    display: block;
-    margin-bottom: 9px;
+
+.footer-item {
+margin-bottom: 9px;
 }
 
 .footer-contacts:hover,
