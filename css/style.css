@@ -34,6 +34,10 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 
 .list {
     list-style: none;
@@ -69,10 +73,6 @@ body {
     
     
         outline: 2px solid tomato;
-}
-.img {
-    display: block;
-    max-width: 100%;
 }
 
 .logo {
@@ -220,6 +220,7 @@ padding-bottom: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -425,8 +426,6 @@ padding-bottom: 32px;
     margin: 0 0 0 -30px;
 }
 .clients .item {
-    display: flex;
-
         flex-basis: calc(100% / 6 - 30px);
             margin-left: 30px;
 }
